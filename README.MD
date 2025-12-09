@@ -30,7 +30,7 @@ JWT_EXPIRE=7d
 ```
 
 # Frontend URL (for CORS)
-CLIENT_URL=http://localhost:3000
+CLIENT_URL=https://hire-me-j5u0.onrender.com
 
 ### User Roles & Access Control
 
