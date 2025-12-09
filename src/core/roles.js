@@ -5,7 +5,7 @@ export const ROLES = {
 };
 
 export const APPLICATION_STATUS = {
-  PENDING: "pending",
+  PENDING: "Pending",
   ACCEPTED: "accepted",
   REJECTED: "rejected",
 };
