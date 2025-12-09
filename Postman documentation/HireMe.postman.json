@@ -1,0 +1,1931 @@
+{
+	"info": {
+		"_postman_id": "cbc61fcb-76a5-4f9d-b422-8d2e8afa06ac",
+		"name": "HireMe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48392996",
+		"_collection_link": "https://mdsoroardi9-9772152.postman.co/workspace/HireMe~8bc744f6-8a93-4788-b639-6ee819bd9b17/collection/48392996-cbc61fcb-76a5-4f9d-b422-8d2e8afa06ac?action=share&source=collection_link&creator=48392996"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhj@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/auth/register",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 04:53:04 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1e586db6a9cba-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"8f-ltfYOsJ2dExp0g4q8lNin6SmTdI\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "6e7a7d1c-e14a-4633"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzdhYjJmM2IzZmRlODQzNjk1NmFkMiIsImlhdCI6MTc2NTI1NTk4NCwiZXhwIjoxNzY1MzQyMzg0fQ.3Qj_DPj2KM0BtlQFVUOHZrXzOjBXKtpWH7iewY_VxNM; Max-Age=604800; Path=/; Expires=Tue, 16 Dec 2025 04:53:04 GMT; HttpOnly; Secure"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered\",\n    \"success\": true,\n    \"user\": {\n        \"id\": \"6937ab2f3b3fde8436956ad2\",\n        \"name\": \"Admin\",\n        \"email\": \"admhjk@exaple.com\",\n        \"role\": \"admin\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/auth/login",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 04:55:03 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "113"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1e86f3be4a481-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"8e-P7reLTVop20bUcR8tSGOwKdqvjI\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "dbdbc375-f8ff-4d1d"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzdhYjJmM2IzZmRlODQzNjk1NmFkMiIsImlhdCI6MTc2NTI1NjEwMywiZXhwIjoxNzY1MzQyNTAzfQ.8nwTPmLGuutLZXbyhVM0gcYOZaUKHVlwXcGP94LuEOU; Max-Age=604800; Path=/; Expires=Tue, 16 Dec 2025 04:55:03 GMT; HttpOnly; Secure"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User logged in\",\n    \"success\": true,\n    \"user\": {\n        \"id\": \"6937ab2f3b3fde8436956ad2\",\n        \"name\": \"Admin\",\n        \"email\": \"admhjk@exaple.com\",\n        \"role\": \"admin\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Admin User\",\r\n  \"email\": \"admin@exapl.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/auth/logout",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Admin User\",\r\n  \"email\": \"admin@exapl.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/auth/logout",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 04:56:36 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1eab8bf0aa48e-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"39-4uaoWrQlEKFaNVNT/LAGoqa420w\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "072ce7b4-e103-4997"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; Secure"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User logged out successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "forgot-password",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/auth/forgot-password",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "forgot-password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/auth/forgot-password",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"forgot-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 04:57:20 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "50"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1ebccef74a48e-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"2e-+OgO1fF+IUPA6VKai3OfEIhkM7M\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "b780b4dd-f0a9-41e6"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"OTP sent to email\",\n    \"otp\": \"602397\"\n}"
+						}
+					]
+				},
+				{
+					"name": "verify-otp",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n \"email\": \"admhjk@exaple.com\",\r\n \"otp\": \"602397\",\r\n  \"newPassword\": \"123456\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/auth/verify-otp",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"verify-otp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "verify-otp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \r\n \"email\": \"admhjk@exaple.com\",\r\n \"otp\": \"602397\",\r\n  \"newPassword\": \"123456\"\r\n  \r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/auth/verify-otp",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"verify-otp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 04:59:12 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1ee82cc8da494-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"29-JLWAnLrf6qmJkXqaEuCQpWt9O0c\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "33db01ba-5e73-4e1d"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Password reset successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get all user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/users/",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/users/",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:00:38 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "513"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1f0a00fbb311c-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"92f-XqASbEhJn21fMSGkCrukokzj8Ws\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "d548a4d3-fc9e-428b"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"69368a6f2254a764a9bfd343\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"admin@xaple.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-08T08:21:03.484Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"69368c8e41be1a53c09dfc5c\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"admine@xaple.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-08T08:30:06.955Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936b4004ec27cd7ddf7c426\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"admine@dxaple.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-08T11:18:24.632Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936ba763bb32adbfb3bf203\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"admined@dxaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T11:45:58.860Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936ca5bbb874a6a31bb6160\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"admined@dxaaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T12:53:47.963Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936ca6e20885ba5d0326d1d\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"adminedd@dxaaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T12:54:06.104Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936ca9b36566f5352baf849\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"adminedd@ggdxaaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T12:54:51.041Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936cacef186ffe2eab9c8fc\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"adminead@ggdxaaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T12:55:42.135Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936d083e23ddcc480ebbb6e\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"admineadd@ggdxaaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T13:20:03.701Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936d0bc45f40870afe66725\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"ad@ggdxaaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T13:21:00.305Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936d1cb1e5dcaf59497490a\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"ad@ggdxjaaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T13:25:31.456Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936d23f1e5dcaf594974911\",\n        \"name\": \"sjkdfhjh\",\n        \"email\": \"ad@gfgdxjaaple.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-08T13:27:27.692Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936fc65b45f7b648ef69e3c\",\n        \"name\": \"Admin User\",\n        \"email\": \"admin@exaple.com\",\n        \"role\": \"job-seeker\",\n        \"createdAt\": \"2025-12-08T16:27:17.218Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"693703d23564f209f406fe51\",\n        \"name\": \"Admin User\",\n        \"email\": \"admi@exaple.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-08T16:58:58.308Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"69378ed046c2dadf3ff4f1b3\",\n        \"name\": \"Admin User\",\n        \"email\": \"admn@exaple.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-09T02:52:00.506Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6937ab2f3b3fde8436956ad2\",\n        \"name\": \"Admin\",\n        \"email\": \"admhjk@exaple.com\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-09T04:53:03.538Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \r\n        \"name\": \"soroardi\"\r\n        \r\n        \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/users/69368a6f2254a764a9bfd343",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"69368a6f2254a764a9bfd343"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateUser",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \r\n        \"name\": \"soroardi\"\r\n        \r\n        \r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/users/69368a6f2254a764a9bfd343",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"69368a6f2254a764a9bfd343"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:03:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "116"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1f46dab77311c-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"8c-IgkdNKb44T+BXRSlVMF3FZgg5oA\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "7e881e87-512d-4a7c"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"69368a6f2254a764a9bfd343\",\n    \"name\": \"soroardi\",\n    \"email\": \"admin@xaple.com\",\n    \"role\": \"admin\",\n    \"createdAt\": \"2025-12-08T08:21:03.484Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/users/69368c8e41be1a53c09dfc5c",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"69368c8e41be1a53c09dfc5c"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteUser",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/users/69368c8e41be1a53c09dfc5c",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"69368c8e41be1a53c09dfc5c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:06:13 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1f8d03ef3a475-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"27-27o4zzUjhHNmthTJyia4gBCjpos\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "eb449beb-3d91-49a8"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "jobs",
+			"item": [
+				{
+					"name": "get-all-jobs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/jobs/",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"jobs",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get-all-jobs",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/jobs/",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"jobs",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:07:02 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1fa004da2a475-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"299-J3AqwKtqNarxSvFJtmMwwpYBmE8\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "426633a9-9f7e-49c7"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6936956c7de2217649158989\",\n        \"title\": \"backend Developer\",\n        \"company\": \"Tech Solutions Ltd\",\n        \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n        \"salary\": 50000,\n        \"postedBy\": null,\n        \"createdAt\": \"2025-12-08T09:07:56.998Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"69370b3d3564f209f406fe60\",\n        \"title\": \"frontend Developer\",\n        \"company\": \"Tech Solutions Ltd\",\n        \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n        \"salary\": 500220,\n        \"postedBy\": {\n            \"_id\": \"693703d23564f209f406fe51\",\n            \"name\": \"Admin User\",\n            \"email\": \"admi@exaple.com\"\n        },\n        \"createdAt\": \"2025-12-08T17:30:37.478Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "create-job",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n        \"title\": \"backend Developer\",\r\n        \"company\": \"Tech Solutions Ltd\",\r\n        \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\r\n        \"salary\": 50020\r\n       \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/jobs/",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"jobs",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create-job",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n        \"title\": \"backend Developer\",\r\n        \"company\": \"Tech Solutions Ltd\",\r\n        \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\r\n        \"salary\": 50020\r\n       \r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/jobs/",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"jobs",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:08:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1fba74a00a47e-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"13a-DrpGKVKtNO+nMxCDkTyyvhJ3RHk\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "372098f3-8e4d-4626"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"backend Developer\",\n    \"company\": \"Tech Solutions Ltd\",\n    \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n    \"salary\": 50020,\n    \"postedBy\": \"6937ab2f3b3fde8436956ad2\",\n    \"_id\": \"6937aeba3b3fde8436956af0\",\n    \"createdAt\": \"2025-12-09T05:08:10.458Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "updateStatus",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \r\n        \"title\": \"frontend Developer\",\r\n        \"company\": \"Tech Solutions Ltd\"       \r\n\r\n}       ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/jobs/6937aeba3b3fde8436956af0",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"jobs",
+								"6937aeba3b3fde8436956af0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateStatus",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \r\n        \"title\": \"frontend Developer\",\r\n        \"company\": \"Tech Solutions Ltd\"       \r\n\r\n}       ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/jobs/6937aeba3b3fde8436956af0",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"jobs",
+										"6937aeba3b3fde8436956af0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:10:44 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab1ff68ed32a47e-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"13b-KoJETrjXrT8QWwrBbJMFzy3nMIA\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "7b4f33a8-692c-4e62"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6937aeba3b3fde8436956af0\",\n    \"title\": \"frontend Developer\",\n    \"company\": \"Tech Solutions Ltd\",\n    \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n    \"salary\": 50020,\n    \"postedBy\": \"6937ab2f3b3fde8436956ad2\",\n    \"createdAt\": \"2025-12-09T05:08:10.458Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "applications",
+			"item": [
+				{
+					"name": " get-applications-by-role",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/applications/",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"applications",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get-applications-by-role",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/applications/",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"applications",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:11:46 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "435"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab200ec6a619ec8-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"837-I26Eop14dOprMAvl6fUF+YItIxo\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "b1419e08-4b8f-4f37"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"693791a746c2dadf3ff4f1c2\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\"\n        },\n        \"applicant\": {\n            \"_id\": \"6936ba763bb32adbfb3bf203\",\n            \"name\": \"sjkdfhjh\",\n            \"email\": \"admined@dxaple.com\"\n        },\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765249447362.pdf\",\n        \"status\": \"accepted\",\n        \"paymentStatus\": \"Paid\",\n        \"createdAt\": \"2025-12-09T03:04:07.416Z\",\n        \"updatedAt\": \"2025-12-09T03:16:03.047Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936c011fd8f7078c3c569c6\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\"\n        },\n        \"applicant\": {\n            \"_id\": \"6936ba763bb32adbfb3bf203\",\n            \"name\": \"sjkdfhjh\",\n            \"email\": \"admined@dxaple.com\"\n        },\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195793811.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Paid\",\n        \"createdAt\": \"2025-12-08T12:09:53.902Z\",\n        \"updatedAt\": \"2025-12-08T12:09:54.073Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936bfe6dab16c93064864ba\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\"\n        },\n        \"applicant\": {\n            \"_id\": \"6936ba763bb32adbfb3bf203\",\n            \"name\": \"sjkdfhjh\",\n            \"email\": \"admined@dxaple.com\"\n        },\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195750881.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Paid\",\n        \"createdAt\": \"2025-12-08T12:09:10.982Z\",\n        \"updatedAt\": \"2025-12-08T12:09:11.163Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936bfbc3a8bef5b645b2321\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\"\n        },\n        \"applicant\": {\n            \"_id\": \"6936ba763bb32adbfb3bf203\",\n            \"name\": \"sjkdfhjh\",\n            \"email\": \"admined@dxaple.com\"\n        },\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195708435.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Free\",\n        \"createdAt\": \"2025-12-08T12:08:28.551Z\",\n        \"updatedAt\": \"2025-12-08T12:08:28.551Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936bfa8a6f11bb43cfbd9f4\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\"\n        },\n        \"applicant\": {\n            \"_id\": \"6936ba763bb32adbfb3bf203\",\n            \"name\": \"sjkdfhjh\",\n            \"email\": \"admined@dxaple.com\"\n        },\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195688099.pdf\",\n        \"status\": \"Accepted\",\n        \"paymentStatus\": \"Free\",\n        \"createdAt\": \"2025-12-08T12:08:08.198Z\",\n        \"updatedAt\": \"2025-12-08T12:40:34.107Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "apply-job",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cvPath",
+									"type": "file",
+									"src": "Jc7iEH9u_/soroardi.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/applications/apply/69370b3d3564f209f406fe60",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"applications",
+								"apply",
+								"69370b3d3564f209f406fe60"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "apply-job",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "cvPath",
+											"type": "file",
+											"src": "Jc7iEH9u_/soroardi.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api-url}}/api/applications/apply/69370b3d3564f209f406fe60",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"applications",
+										"apply",
+										"69370b3d3564f209f406fe60"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:33:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "238"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab220260dc65853-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"18d-MZ5VGgHf5aaqQ1gEIPTOP22o0xg\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "47f07f5f-3f60-44f7"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Application submitted successfully.\",\n    \"application\": {\n        \"job\": \"69370b3d3564f209f406fe60\",\n        \"applicant\": \"6936ba763bb32adbfb3bf203\",\n        \"cvPath\": \"uploads/6936ba763bb32adbfb3bf203-1765258388772.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Paid\",\n        \"_id\": \"6937b49585d8f061ef397633\",\n        \"createdAt\": \"2025-12-09T05:33:09.158Z\",\n        \"updatedAt\": \"2025-12-09T05:33:09.636Z\",\n        \"__v\": 0\n    },\n    \"invoice\": \"6937b49585d8f061ef397635\"\n}"
+						}
+					]
+				},
+				{
+					"name": "apply-history",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/applications/history",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"applications",
+								"history"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "apply-history",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{api-url}}/api/applications/history",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"applications",
+										"history"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:33:44 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "616"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab2211bc8975853-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"ec3-FcNKDJBD7E5PuSn+j1Bub1MF4+g\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "cbb5c63a-142a-422a"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6937b49585d8f061ef397633\",\n        \"job\": {\n            \"_id\": \"69370b3d3564f209f406fe60\",\n            \"title\": \"frontend Developer\",\n            \"company\": \"Tech Solutions Ltd\",\n            \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n            \"salary\": 500220,\n            \"postedBy\": \"693703d23564f209f406fe51\"\n        },\n        \"applicant\": \"6936ba763bb32adbfb3bf203\",\n        \"cvPath\": \"uploads/6936ba763bb32adbfb3bf203-1765258388772.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Paid\",\n        \"createdAt\": \"2025-12-09T05:33:09.158Z\",\n        \"updatedAt\": \"2025-12-09T05:33:09.636Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6937b3d72acea943d2af3ac3\",\n        \"job\": {\n            \"_id\": \"69370b3d3564f209f406fe60\",\n            \"title\": \"frontend Developer\",\n            \"company\": \"Tech Solutions Ltd\",\n            \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n            \"salary\": 500220,\n            \"postedBy\": \"693703d23564f209f406fe51\"\n        },\n        \"applicant\": \"6936ba763bb32adbfb3bf203\",\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765258199316.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Paid\",\n        \"createdAt\": \"2025-12-09T05:29:59.390Z\",\n        \"updatedAt\": \"2025-12-09T05:29:59.544Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"693791a746c2dadf3ff4f1c2\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\",\n            \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n            \"salary\": 50000,\n            \"postedBy\": \"693687b82a5c8474a86e0149\"\n        },\n        \"applicant\": \"6936ba763bb32adbfb3bf203\",\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765249447362.pdf\",\n        \"status\": \"accepted\",\n        \"paymentStatus\": \"Paid\",\n        \"createdAt\": \"2025-12-09T03:04:07.416Z\",\n        \"updatedAt\": \"2025-12-09T03:16:03.047Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936c011fd8f7078c3c569c6\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\",\n            \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n            \"salary\": 50000,\n            \"postedBy\": \"693687b82a5c8474a86e0149\"\n        },\n        \"applicant\": \"6936ba763bb32adbfb3bf203\",\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195793811.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Paid\",\n        \"createdAt\": \"2025-12-08T12:09:53.902Z\",\n        \"updatedAt\": \"2025-12-08T12:09:54.073Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936bfe6dab16c93064864ba\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\",\n            \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n            \"salary\": 50000,\n            \"postedBy\": \"693687b82a5c8474a86e0149\"\n        },\n        \"applicant\": \"6936ba763bb32adbfb3bf203\",\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195750881.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Paid\",\n        \"createdAt\": \"2025-12-08T12:09:10.982Z\",\n        \"updatedAt\": \"2025-12-08T12:09:11.163Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936bfbc3a8bef5b645b2321\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\",\n            \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n            \"salary\": 50000,\n            \"postedBy\": \"693687b82a5c8474a86e0149\"\n        },\n        \"applicant\": \"6936ba763bb32adbfb3bf203\",\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195708435.pdf\",\n        \"status\": \"Pending\",\n        \"paymentStatus\": \"Free\",\n        \"createdAt\": \"2025-12-08T12:08:28.551Z\",\n        \"updatedAt\": \"2025-12-08T12:08:28.551Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6936bfa8a6f11bb43cfbd9f4\",\n        \"job\": {\n            \"_id\": \"6936956c7de2217649158989\",\n            \"title\": \"backend Developer\",\n            \"company\": \"Tech Solutions Ltd\",\n            \"description\": \"We are looking for a skilled frontend developer with experience in React.js and modern web technologies.\",\n            \"salary\": 50000,\n            \"postedBy\": \"693687b82a5c8474a86e0149\"\n        },\n        \"applicant\": \"6936ba763bb32adbfb3bf203\",\n        \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195688099.pdf\",\n        \"status\": \"Accepted\",\n        \"paymentStatus\": \"Free\",\n        \"createdAt\": \"2025-12-08T12:08:08.198Z\",\n        \"updatedAt\": \"2025-12-08T12:40:34.107Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "update-status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"accepted\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hire-me-j5u0.onrender.com/api/applications/6936c011fd8f7078c3c569c6",
+							"protocol": "https",
+							"host": [
+								"hire-me-j5u0",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"applications",
+								"6936c011fd8f7078c3c569c6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update-status",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"accepted\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/api/applications/6936c011fd8f7078c3c569c6",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"api",
+										"applications",
+										"6936c011fd8f7078c3c569c6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 05:41:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9ab22ccee8bd9cba-DAC"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"12a-O4fnxTJMi74Nj2CzbyK0jr6sGEI\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "bcc1ee7d-1984-435c"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6936c011fd8f7078c3c569c6\",\n    \"job\": \"6936956c7de2217649158989\",\n    \"applicant\": \"6936ba763bb32adbfb3bf203\",\n    \"cvPath\": \"uploads\\\\6936ba763bb32adbfb3bf203-1765195793811.pdf\",\n    \"status\": \"accepted\",\n    \"paymentStatus\": \"Paid\",\n    \"createdAt\": \"2025-12-08T12:09:53.902Z\",\n    \"updatedAt\": \"2025-12-09T05:41:43.471Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "api-url",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
