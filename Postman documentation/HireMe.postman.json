@@ -20,7 +20,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhj@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+							"raw": "{\r\n  \"name\": \"robi\",\r\n  \"email\": \"admhj@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"job-seeker\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -50,7 +50,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+									"raw": "{\r\n  \"name\": \"robi\",\r\n  \"email\": \"admhj@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"job-seeker\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -58,9 +58,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{api-url}}/api/auth/register",
+									"raw": "https://hire-me-j5u0.onrender.com/api/auth/register",
+									"protocol": "https",
 									"host": [
-										"{{api-url}}"
+										"hire-me-j5u0",
+										"onrender",
+										"com"
 									],
 									"path": [
 										"api",
@@ -71,11 +74,11 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "",
 							"header": [
 								{
 									"key": "Date",
-									"value": "Tue, 09 Dec 2025 04:53:04 GMT"
+									"value": "Tue, 09 Dec 2025 10:04:15 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -83,7 +86,7 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "115"
+									"value": "111"
 								},
 								{
 									"key": "Connection",
@@ -91,7 +94,7 @@
 								},
 								{
 									"key": "CF-RAY",
-									"value": "9ab1e586db6a9cba-DAC"
+									"value": "9ab3ad5a6b2836c6-DAC"
 								},
 								{
 									"key": "Content-Encoding",
@@ -99,15 +102,15 @@
 								},
 								{
 									"key": "etag",
-									"value": "W/\"8f-ltfYOsJ2dExp0g4q8lNin6SmTdI\""
+									"value": "W/\"92-RdyWv7Tuk/1aBSJzSJkEWQghGBs\""
 								},
 								{
 									"key": "rndr-id",
-									"value": "6e7a7d1c-e14a-4633"
+									"value": "19b8b83d-0600-4575"
 								},
 								{
 									"key": "Set-Cookie",
-									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzdhYjJmM2IzZmRlODQzNjk1NmFkMiIsImlhdCI6MTc2NTI1NTk4NCwiZXhwIjoxNzY1MzQyMzg0fQ.3Qj_DPj2KM0BtlQFVUOHZrXzOjBXKtpWH7iewY_VxNM; Max-Age=604800; Path=/; Expires=Tue, 16 Dec 2025 04:53:04 GMT; HttpOnly; Secure"
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzdmNDFlMGI2NjllZTI3NzQxMDE5OSIsImlhdCI6MTc2NTI3NDY1NSwiZXhwIjoxNzY1MzYxMDU1fQ.ZC_3AKWSiIXMbzzCaRNvKDieLNkius9dQAKK497Uxbw; Max-Age=604800; Path=/; Expires=Tue, 16 Dec 2025 10:04:15 GMT; HttpOnly; Secure"
 								},
 								{
 									"key": "vary",
@@ -135,7 +138,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"message\": \"User registered\",\n    \"success\": true,\n    \"user\": {\n        \"id\": \"6937ab2f3b3fde8436956ad2\",\n        \"name\": \"Admin\",\n        \"email\": \"admhjk@exaple.com\",\n        \"role\": \"admin\"\n    }\n}"
+							"body": "{\n    \"message\": \"User registered\",\n    \"success\": true,\n    \"user\": {\n        \"id\": \"6937f41e0b669ee277410199\",\n        \"name\": \"robi\",\n        \"email\": \"admhj@exaple.com\",\n        \"role\": \"job-seeker\"\n    }\n}"
 						}
 					]
 				},
@@ -149,7 +152,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
+							"raw": "{\r\n  \"email\": \"mdsoroardi9@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -179,7 +182,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
+									"raw": "{\r\n  \"email\": \"mdsoroardi9@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -187,9 +190,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{api-url}}/api/auth/login",
+									"raw": "https://hire-me-j5u0.onrender.com/api/auth/login",
+									"protocol": "https",
 									"host": [
-										"{{api-url}}"
+										"hire-me-j5u0",
+										"onrender",
+										"com"
 									],
 									"path": [
 										"api",
@@ -200,11 +206,11 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "",
 							"header": [
 								{
 									"key": "Date",
-									"value": "Tue, 09 Dec 2025 04:55:03 GMT"
+									"value": "Tue, 09 Dec 2025 10:06:02 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -212,7 +218,7 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "113"
+									"value": "117"
 								},
 								{
 									"key": "Connection",
@@ -220,7 +226,7 @@
 								},
 								{
 									"key": "CF-RAY",
-									"value": "9ab1e86f3be4a481-DAC"
+									"value": "9ab3aff9be20a475-DAC"
 								},
 								{
 									"key": "Content-Encoding",
@@ -228,15 +234,15 @@
 								},
 								{
 									"key": "etag",
-									"value": "W/\"8e-P7reLTVop20bUcR8tSGOwKdqvjI\""
+									"value": "W/\"95-B89QeajtdkYkBmf4QvGacv8FIIk\""
 								},
 								{
 									"key": "rndr-id",
-									"value": "dbdbc375-f8ff-4d1d"
+									"value": "b138b589-4ea8-45a7"
 								},
 								{
 									"key": "Set-Cookie",
-									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzdhYjJmM2IzZmRlODQzNjk1NmFkMiIsImlhdCI6MTc2NTI1NjEwMywiZXhwIjoxNzY1MzQyNTAzfQ.8nwTPmLGuutLZXbyhVM0gcYOZaUKHVlwXcGP94LuEOU; Max-Age=604800; Path=/; Expires=Tue, 16 Dec 2025 04:55:03 GMT; HttpOnly; Secure"
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzdjZjZmYmQzMDliOTkzYjZhYmU4ZCIsImlhdCI6MTc2NTI3NDc2MiwiZXhwIjoxNzY1MzYxMTYyfQ.A79pDdE-A1uxabB2ebp61jpnTyjZcgnrQqtTREykr8s; Max-Age=604800; Path=/; Expires=Tue, 16 Dec 2025 10:06:02 GMT; HttpOnly; Secure"
 								},
 								{
 									"key": "vary",
@@ -264,7 +270,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"message\": \"User logged in\",\n    \"success\": true,\n    \"user\": {\n        \"id\": \"6937ab2f3b3fde8436956ad2\",\n        \"name\": \"Admin\",\n        \"email\": \"admhjk@exaple.com\",\n        \"role\": \"admin\"\n    }\n}"
+							"body": "{\n    \"message\": \"User logged in\",\n    \"success\": true,\n    \"user\": {\n        \"id\": \"6937cf6fbd309b993b6abe8d\",\n        \"name\": \"soroardi\",\n        \"email\": \"mdsoroardi9@gmail.com\",\n        \"role\": \"admin\"\n    }\n}"
 						}
 					]
 				},
@@ -278,7 +284,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Admin User\",\r\n  \"email\": \"admin@exapl.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
+							"raw": "{\r\n \"email\": \"mdsoroardi9@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -407,7 +413,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
+							"raw": "{\r\n  \"email\": \"mdsoroardi9@gmail.com\"\r\n  \r\n\r\n}\r\n\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -437,7 +443,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admhjk@exaple.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"admin\"\r\n}\r\n\r\n",
+									"raw": "{\r\n  \"email\": \"mdsoroardi9@gmail.com\"\r\n  \r\n\r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -445,9 +451,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{api-url}}/api/auth/forgot-password",
+									"raw": "https://hire-me-j5u0.onrender.com/api/auth/forgot-password",
+									"protocol": "https",
 									"host": [
-										"{{api-url}}"
+										"hire-me-j5u0",
+										"onrender",
+										"com"
 									],
 									"path": [
 										"api",
@@ -458,11 +467,11 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "",
 							"header": [
 								{
 									"key": "Date",
-									"value": "Tue, 09 Dec 2025 04:57:20 GMT"
+									"value": "Tue, 09 Dec 2025 10:08:32 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -478,7 +487,7 @@
 								},
 								{
 									"key": "CF-RAY",
-									"value": "9ab1ebccef74a48e-DAC"
+									"value": "9ab3b3a73f21a475-DAC"
 								},
 								{
 									"key": "Content-Encoding",
@@ -486,11 +495,11 @@
 								},
 								{
 									"key": "etag",
-									"value": "W/\"2e-+OgO1fF+IUPA6VKai3OfEIhkM7M\""
+									"value": "W/\"2e-8w4ool2eau6mjSYAEyYbdorZD+c\""
 								},
 								{
 									"key": "rndr-id",
-									"value": "b780b4dd-f0a9-41e6"
+									"value": "0af95575-96e2-4ec1"
 								},
 								{
 									"key": "vary",
@@ -518,7 +527,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"message\": \"OTP sent to email\",\n    \"otp\": \"602397\"\n}"
+							"body": "{\n    \"message\": \"OTP sent to email\",\n    \"otp\": \"348871\"\n}"
 						}
 					]
 				},
