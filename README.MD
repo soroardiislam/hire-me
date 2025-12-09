@@ -32,6 +32,11 @@ JWT_EXPIRE=7d
 # Frontend URL (for CORS)
 CLIENT_URL=https://hire-me-j5u0.onrender.com
 
+# Postman documentation
+POSTMAN_DOCUMENT_LINK =https://github.com/soroardiislam/hire-me/tree/main/Postman%20documentation
+
+# ERD
+ERD_LINK =https://github.com/soroardiislam/hire-me/tree/main/ERD-PDF
 ### User Roles & Access Control
 
 ```
