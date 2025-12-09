@@ -1,11 +1,9 @@
 import * as authService from "./auth.service.js";
 
-// Register
 export const register = async (req, res) => {
   try {
     const { name, email, password, role } = req.body;
 
-    // Auth service call
     const userData = await authService.registerUser({
       name,
       email,
@@ -13,14 +11,11 @@ export const register = async (req, res) => {
       role,
     });
 
-    // Cookie set (HTTP only)
     res.cookie("token", userData.token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production", // HTTPS only in production
-      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+      secure: process.env.NODE_ENV === "production",
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
-
-    // Response
     res.status(201).json({
       message: "User registered",
       success: true,
@@ -36,23 +31,18 @@ export const register = async (req, res) => {
   }
 };
 
-
-// Login
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    // Auth service থেকে user validation
     const userData = await authService.loginUser(email, password);
 
-    // Cookie set (JWT token)
     res.cookie("token", userData.token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production", // HTTPS only
-      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+      secure: process.env.NODE_ENV === "production",
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
-    // Response without password
     res.json({
       message: "User logged in",
       success: true,
@@ -68,11 +58,8 @@ export const login = async (req, res) => {
   }
 };
 
-
-// Logout
 export const logout = async (req, res) => {
   try {
-    // Cookie clear করা
     res.clearCookie("token", {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
@@ -84,8 +71,6 @@ export const logout = async (req, res) => {
   }
 };
 
-
-// Forgot password
 export const forgotPassword = async (req, res) => {
   try {
     const { email } = req.body;
@@ -96,7 +81,6 @@ export const forgotPassword = async (req, res) => {
   }
 };
 
-// Verify OTP
 export const verifyOTP = async (req, res) => {
   try {
     const { email, otp, newPassword } = req.body;
@@ -111,7 +95,6 @@ export const verifyOTP = async (req, res) => {
   }
 };
 
-// Update profile
 export const updateProfile = async (req, res) => {
   try {
     const userId = req.user.id;

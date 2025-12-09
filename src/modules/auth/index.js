@@ -1,5 +1,4 @@
-// src/modules/auth/index.js (Updated)
-export * from './auth.controller.js';
-export * from './auth.service.js';
-export * from './auth.routes.js';
-export * from './auth.validation.js'; // নতুন এক্সপোর্ট
+export * from "./auth.controller.js";
+export * from "./auth.service.js";
+export * from "./auth.routes.js";
+export * from "./auth.validation.js";
