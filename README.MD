@@ -1,61 +1,94 @@
-🚀 HireMe – Modular Backend (Node.js / Express.js)
 
-HireMe is a fully modular backend application built using a clean Controller–Service–Model–Route architecture.
-It supports JWT-based RBAC authentication, file uploads, and a structured job application workflow.
+# HireMe – Modular Backend (Node.js / Express.js)
+HireMe is a fully modular backend application built with a clean Controller–Service–Model–Route architecture. It supports JWT-based RBAC authentication, file uploads, and a structured job application workflow.
 
-⚙️ Setup Instructions
 
-Follow the steps below to run the project locally:
+# ⚙️ Quick Start
+Prerequisites
+Node.js (v16 or higher)
 
-1. Clone the repository
-git clone <your-repository-url>
-cd hireme-backend
+MongoDB (local or Atlas)
 
-2. Install dependencies
-npm install
+npm 
 
-3. Configure environment variables
+Installation
+Clone the repository
 
-Create a .env file in the project root and configure all required environment variables.
+## git clone 
+```
+sdfkjlasdkjf
+```
+### cd hireme-backend
 
-4. Create Uploads Folder
-mkdir uploads
+```
 
-5. Start the development server
-npm run dev
+PORT=3000
+MONGO_URI=mongodb://localhost:27017/hireme
+JWT_SECRET=your_jwt_secret_key_here
+JWT_EXPIRE=7d
 
-🔐 User Roles & Access Control
-Role	Description
-Admin	Can manage all users, jobs, and job applications.
-Employee	Can create job posts and manage received applications (Accept/Reject).
-Job Seeker	Can view job posts, upload a CV, and apply for jobs with a mock payment.
-📌 API Endpoints
-Auth
-Method	Route	Description	Access
-POST	/api/auth/register	Register a new user (default role: Job Seeker)	Public
-POST	/api/auth/login	Login & receive JWT token	Public
-POST	/api/auth/logout	Logout user	Public
-POST	/api/auth/forgot-password	Send OTP to email	Public
-POST	/api/auth/verify-otp	OTP verification	Public
-PUT	/api/auth/update-profile	Update user profile	Authenticated
-Jobs
-Method	Route	Description	Access
-GET	/api/jobs	Get all job listings	Public
-POST	/api/jobs	Create job post	Employee, Admin
-PUT	/api/jobs/:id	Update job post	Employee, Admin
-DELETE	/api/jobs/:id	Delete job post	Employee, Admin
-Applications
-Method	Route	Description	Access
-POST	/api/applications/apply/:jobId	Apply for a job with CV upload	Job Seeker
-PUT	/api/applications/:id	Update status (ACCEPT / REJECT)	Employee, Admin
-GET	/api/applications/history	Get own application history	Job Seeker
-GET	/api/applications	Get all applications (role-based)	Employee, Admin
-Users
-Method	Route	Description	Access
-GET	/api/users	Get all users	Admin
-PUT	/api/users/:id	Update user	Admin
-DELETE	/api/users/:id	Delete user	Admin
-📁 Project Folder Structure
+```
+
+# Frontend URL (for CORS)
+CLIENT_URL=http://localhost:3000
+
+### User Roles & Access Control
+
+```
+| Role           | Description                                                    |
+| -------------- | -------------------------------------------------------------- |
+| **Admin**      | Manage all users, jobs, and applications                       |
+| **Employee**   | Create job posts, manage received applications (Accept/Reject) |
+| **Job Seeker** | View jobs, upload CV, apply for jobs with mock payment         |
+
+```
+
+## API Endpoints
+### Auth
+```
+| Method | Route                       | Description                             | Access        |
+| ------ | --------------------------- | --------------------------------------- | ------------- |
+| POST   | `/api/auth/register`        | Register new user (default: Job Seeker) | Public        |
+| POST   | `/api/auth/login`           | Login & receive JWT                     | Public        |
+| POST   | `/api/auth/logout`          | Logout                                  | Public        |
+| POST   | `/api/auth/forgot-password` | Send OTP to email                       | Public        |
+| POST   | `/api/auth/verify-otp`      | Verify OTP                              | Public        |
+| PUT    | `/api/auth/update-profile`  | Update user profile                     | Authenticated |
+
+```
+### Jobs
+```
+| Method | Route           | Description          | Access          |
+| ------ | --------------- | -------------------- | --------------- |
+| GET    | `/api/jobs`     | Get all job listings | Public          |
+| POST   | `/api/jobs`     | Create job post      | Employee, Admin |
+| PUT    | `/api/jobs/:id` | Update job post      | Employee, Admin |
+| DELETE | `/api/jobs/:id` | Delete job post      | Employee, Admin |
+
+```
+### Applications
+```
+| Method | Route                            | Description                      | Access          |
+| ------ | -------------------------------- | -------------------------------- | --------------- |
+| POST   | `/api/applications/apply/:jobId` | Apply for a job (with CV upload) | Job Seeker      |
+| PUT    | `/api/applications/:id`          | Update status (ACCEPT / REJECT)  | Employee, Admin |
+| GET    | `/api/applications/history`      | Get own application history      | Job Seeker      |
+| GET    | `/api/applications`              | Get all applications (RBAC)      | Employee, Admin |
+
+```
+### Users
+
+```| Method | Route            | Description   | Access |
+| ------ | ---------------- | ------------- | ------ |
+| GET    | `/api/users`     | Get all users | Admin  |
+| PUT    | `/api/users/:id` | Update user   | Admin  |
+| DELETE | `/api/users/:id` | Delete user   | Admin  |
+
+```
+
+## Project Folder Structure
+
+```
 .
 ├── node_modules
 ├── src
@@ -70,31 +103,30 @@ DELETE	/api/users/:id	Delete user	Admin
 │   │   ├── auth.js
 │   │   ├── role.js
 │   │   ├── upload.js
-│   │   └── modules
-│   ├── applications
-│   │   ├── application.controller.js
-│   │   ├── application.model.js
-│   │   ├── application.routes.js
-│   │   ├── application.service.js
-│   │   ├── application.validation.js
-│   │   └── index.js
-│   ├── auth
-│   │   ├── auth.controller.js
-│   │   ├── auth.service.js
-│   │   ├── auth.validation.js
-│   │   └── index.js
-│   ├── invoice
-│   │   ├── index.js
-│   │   ├── invoice.model.js
-│   │   └── invoice.service.js
-│   ├── jobs
-│   │   ├── index.js
-│   │   ├── job.controller.js
-│   │   ├── job.model.js
-│   │   ├── job.routes.js
-│   │   ├── job.service.js
-│   │   ├── job.validation.js
-│   │   └── users
+│   ├── modules
+│   │   ├── applications
+│   │   │   ├── application.controller.js
+│   │   │   ├── application.model.js
+│   │   │   ├── application.routes.js
+│   │   │   ├── application.service.js
+│   │   │   ├── application.validation.js
+│   │   │   └── index.js
+│   │   ├── auth
+│   │   │   ├── auth.controller.js
+│   │   │   ├── auth.service.js
+│   │   │   ├── auth.validation.js
+│   │   │   └── index.js
+│   │   ├── invoice
+│   │   │   ├── index.js
+│   │   │   ├── invoice.model.js
+│   │   │   └── invoice.service.js
+│   │   ├── jobs
+│   │   │   ├── index.js
+│   │   │   ├── job.controller.js
+│   │   │   ├── job.model.js
+│   │   │   ├── job.routes.js
+│   │   │   ├── job.service.js
+│   │   │   ├── job.validation.js
 │   ├── user
 │   │   ├── user.controller.js
 │   │   ├── user.model.js
@@ -113,13 +145,15 @@ DELETE	/api/users/:id	Delete user	Admin
 │       ├── sendEmail.js
 │       └── index.js
 ├── uploads
-│   └── 65e5e6...
+│   └── <files>
 ├── .env
 ├── package.json
 ├── package-lock.json
 └── README.md
+              # Entry point, DB connection, server start
+```
 
-🧩 Tech Stack
+# Tech Stack
 
 Node.js
 
