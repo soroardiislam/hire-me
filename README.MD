@@ -16,7 +16,7 @@ Clone the repository
 
 ## git clone 
 ```
-sdfkjlasdkjf
+https://github.com/soroardiislam/hire-me.git
 ```
 ### cd hireme-backend
 
