@@ -26,6 +26,8 @@ PORT=3000
 MONGO_URI=mongodb://localhost:27017/hireme
 JWT_SECRET=your_jwt_secret_key_here
 JWT_EXPIRE=7d
+ADMIN_EMAIL=mdsoroardi9@gmail.com
+PASSWORD ="123456"
 
 ```
 
