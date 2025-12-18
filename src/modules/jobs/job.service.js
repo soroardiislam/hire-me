@@ -35,5 +35,7 @@ export const deleteJobById = async (jobId, userId, userRole) => {
   await Application.deleteMany({ job: jobId });
   await job.deleteOne();
 
-  return { message: "Job and associated applications deleted successfully" };
+  return {
+    message: "Job and associated applications deleted successfully",
+  };
 };
