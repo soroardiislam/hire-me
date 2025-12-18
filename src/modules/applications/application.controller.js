@@ -1,3 +1,4 @@
+import { success } from "zod";
 import * as applicationService from "./application.service.js";
 
 export const updateStatus = async (req, res, next) => {
@@ -15,7 +16,10 @@ export const updateStatus = async (req, res, next) => {
     );
     res.json(updatedApp);
   } catch (error) {
-    res.status(403).json({ message: error.message });
+    res.status(403).json({
+      message: error.message,
+      success: false,
+    });
   }
 };
 
@@ -43,7 +47,10 @@ export const getApplicationsByRole = async (req, res, next) => {
     );
     res.json(applications);
   } catch (error) {
-    res.status(403).json({ message: error.message });
+    res.status(403).json({
+      message: error.message,
+      success: false,
+    });
   }
 };
 
@@ -53,7 +60,10 @@ export const applyJob = async (req, res, next) => {
     const userId = req.user.id;
 
     if (!req.file) {
-      return res.status(400).json({ message: "Resume file is required." });
+      return res.status(400).json({
+        message: "Resume file is required.",
+        success: false,
+      });
     }
     const cvPath = req.file.path;
 
@@ -72,6 +82,9 @@ export const applyJob = async (req, res, next) => {
       invoice: result.payment.invoiceId,
     });
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    res.status(400).json({
+      message: error.message,
+      success: false,
+    });
   }
 };
