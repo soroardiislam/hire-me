@@ -19,7 +19,6 @@ export const findApplicationsByRole = async (userRole, userId, query = {}) => {
     .sort({ createdAt: -1 });
 };
 
-
 export const submitApplication = async (jobId, userId, cvPath, amount) => {
   const job = await Job.findById(jobId);
   if (!job) throw new Error("Job not found");
