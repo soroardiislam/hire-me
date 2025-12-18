@@ -1,12 +1,7 @@
 import Invoice from "../modules/invoices/invoice.model.js";
 import { logger } from "../utils/logger.js";
 
-/**
- * @description
- * @param {string} userId
- * @param {number} amount
- * @returns {object} { success: boolean, invoiceId: string }
- */
+
 export const processMockPayment = async (userId, amount) => {
   logger.info(
     `Processing mock payment for User: ${userId}, Amount: ${amount} Taka`
