@@ -3,19 +3,31 @@ import bcrypt from "bcryptjs";
 import crypto from "crypto";
 
 const UserSchema = new mongoose.Schema({
-  name: { type: String, required: true },
+  name: {
+     type: String,
+     required: true 
+    },
   email: {
     type: String,
     required: true,
     unique: true,
     match: [/.+@.+\..+/, "Please use a valid email address"],
   },
-  password: { type: String, required: true, minlength: 6, select: false },
+  password: { 
+    type: String,
+     required: true,
+      minlength: 6, 
+      select: false 
+    },
   cv: String,
   resetPasswordToken: String,
   resetPasswordExpire: Date,
-  role: { type: String, enum: ["employee", "job-seeker", "admin"] },
-  createdAt: { type: Date, default: Date.now },
+  role: { type: String,
+     enum: ["employee", "job-seeker", "admin"]
+     },
+  createdAt: { type: Date,
+     default: Date.now 
+    },
 });
 
 UserSchema.pre("save", async function (next) {
