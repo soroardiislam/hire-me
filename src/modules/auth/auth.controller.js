@@ -1,3 +1,4 @@
+import { success } from "zod";
 import * as authService from "./auth.service.js";
 
 export const register = async (req, res) => {
@@ -54,7 +55,10 @@ export const login = async (req, res) => {
       },
     });
   } catch (err) {
-    res.status(401).json({ message: err.message });
+    res.status(401).json({
+      message: err.message,
+      success: false,
+    });
   }
 };
 
@@ -65,9 +69,15 @@ export const logout = async (req, res) => {
       secure: process.env.NODE_ENV === "production",
     });
 
-    res.json({ message: "User logged out successfully", success: true });
+    res.json({
+      message: "User logged out successfully",
+      success: true,
+    });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({
+      message: err.message,
+      success: false,
+    });
   }
 };
 
@@ -77,7 +87,10 @@ export const forgotPassword = async (req, res) => {
     const response = await authService.forgotPasswordService(email);
     res.json(response);
   } catch (err) {
-    res.status(400).json({ message: err.message });
+    res.status(400).json({
+      message: err.message,
+      success: false,
+    });
   }
 };
 
@@ -91,7 +104,10 @@ export const verifyOTP = async (req, res) => {
     );
     res.json(response);
   } catch (err) {
-    res.status(400).json({ message: err.message });
+    res.status(400).json({
+      message: err.message,
+      success: false,
+    });
   }
 };
 
@@ -101,6 +117,9 @@ export const updateProfile = async (req, res) => {
     const data = await authService.updateProfileService(userId, req.body);
     res.json(data);
   } catch (err) {
-    res.status(400).json({ message: err.message });
+    res.status(400).json({
+      message: err.message,
+      success: false,
+    });
   }
 };
