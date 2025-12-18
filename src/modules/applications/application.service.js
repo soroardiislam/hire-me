@@ -1,6 +1,6 @@
 import Application from "./application.model.js";
 import Job from "../jobs/job.model.js";
-import { APPLICATION_STATUS, ROLES } from "../../core/roles.js";
+import { ROLES } from "../../core/roles.js";
 import { processMockPayment } from "../../services/payment.service.js";
 
 export const findApplicationsByRole = async (userRole, userId, query = {}) => {
@@ -19,11 +19,7 @@ export const findApplicationsByRole = async (userRole, userId, query = {}) => {
     .sort({ createdAt: -1 });
 };
 
-/**
- * @param {String} jobId
- * @param {String} userId
- * @param {String} cvPath
- */
+
 export const submitApplication = async (jobId, userId, cvPath, amount) => {
   const job = await Job.findById(jobId);
   if (!job) throw new Error("Job not found");
