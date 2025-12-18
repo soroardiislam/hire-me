@@ -33,7 +33,10 @@ export const loginUser = async (email, password) => {
   throw new Error("Invalid email or password");
 };
 
-export const logoutUser = async () => ({ message: "Logged out successfully" });
+export const logoutUser = async () => ({
+  message: "Logged out successfully",
+  success: true,
+});
 
 export const forgotPasswordService = async (email) => {
   const user = await User.findOne({ email });
@@ -41,7 +44,10 @@ export const forgotPasswordService = async (email) => {
   const resetToken = user.getResetPasswordToken();
   await user.save({ validateBeforeSave: false });
 
-  return { message: "OTP sent to email", otp: resetToken };
+  return {
+    message: "OTP sent to email",
+    otp: resetToken,
+  };
 };
 
 export const verifyOTPAndResetPasswordService = async (
@@ -63,7 +69,10 @@ export const verifyOTPAndResetPasswordService = async (
   user.resetPasswordToken = undefined;
   user.resetPasswordExpire = undefined;
   await user.save();
-  return { message: "Password reset successfully" };
+  return {
+    message: "Password reset successfully",
+    success: true,
+  };
 };
 
 export const updateProfileService = async (id, data) => {
