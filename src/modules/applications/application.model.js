@@ -3,7 +3,11 @@ import { APPLICATION_STATUS } from "../../core/roles.js";
 
 const applicationSchema = mongoose.Schema(
   {
-    job: { type: mongoose.Schema.Types.ObjectId, ref: "Job", required: true },
+    job: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Job",
+      required: true,
+    },
     applicant: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
