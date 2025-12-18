@@ -43,5 +43,8 @@ export const deleteUserById = async (userId) => {
   if (result.deletedCount === 0) {
     throw new Error("User not found");
   }
-  return { message: "User deleted successfully" };
+  return {
+    message: "User deleted successfully",
+    success: true,
+  };
 };
