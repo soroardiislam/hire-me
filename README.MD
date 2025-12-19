@@ -34,8 +34,8 @@ PASSWORD ="123456"
 # Frontend URL (for CORS)
 CLIENT_URL=https://hire-me-j5u0.onrender.com
 
-# Postman documentation
-POSTMAN_DOCUMENT_LINK =https://github.com/soroardiislam/hire-me/tree/main/Postman%20documentation
+### Postman Documentation:
+[![Postman Documentation](https://img.shields.io/badge/Postman-API%20Docs-orange?logo=postman)](https://documenter.getpostman.com/view/48392996/2sB3dVPTQh)
 
 # ERD
 ERD_LINK =https://github.com/soroardiislam/hire-me/tree/main/ERD-PDF
